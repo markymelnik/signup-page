@@ -3,14 +3,19 @@
   --standard-padding: 0px;
 }
 
-@font-face {
-  font-family: openSans;
-  src: url(OpenSans.ttf);
-}
-
 * {
   font-family: openSans;
   margin: 0 auto;
+}
+
+@font-face {
+  font-family: openSans;
+  src: url(fonts/OpenSans.ttf);
+}
+
+@font-face {
+  font-family: openSansBold;
+  src: url(fonts/OpenSansBold.ttf);
 }
 
 .main-container {
@@ -36,7 +41,6 @@
 .logo-image {
   position: absolute;
   display: flex;
-
 }
 
 .pflogo-img {
@@ -63,6 +67,10 @@
   margin-left: var(--standard-left-margin);
 }
 
+.pf-text {
+  font-family: openSansBold;
+}
+
 .direct-text {
   font-size: 20px;
   margin-left: var(--standard-left-margin);
@@ -70,8 +78,8 @@
   margin-bottom: 15px;
 }
 
-
 .middle-section {
+  position: relative;
   padding: 20px;
   padding-bottom: 1px;
   background: #ecf6ff;
@@ -85,10 +93,6 @@
   margin-top: 10px;
   margin-bottom: 20px;
 
-}
-
-h1 {
-  font-size: 20px;
 }
 
 .form-section {
@@ -112,18 +116,30 @@ label, input {
 
 label {
   font-size: 12px;
-  text-transform: uppercase;
   margin-bottom: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
 input {
   width: 200px;
   height: 25px;
   border: none;
   border-bottom: solid 1px lightgrey;
+  padding: 2px;
+  padding-left: 8px;
 }
 
 .input-field {
   margin-top: 12px;
+}
+
+.guitar-img {
+  position: absolute;
+  max-width: 250px;
+  right: 20px;
+  top: 20px;
+  
 }
 
 .bottom-section {
@@ -138,19 +154,26 @@ input {
 
 button {
   color: white;
-  background: #64c4ff;
-  font-size: 15px;
-  font-weight: bolder;
+  background: #53acff;
+  font-size: 16px;
   margin-left: var(--standard-left-margin);
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   padding: 15px;
   padding-left: 40px;
   padding-right: 40px;
+  box-shadow: lightgrey 0px 4px 4px;
 }
 
 button:hover {
   cursor: pointer;
+  background: #68b6ff;
+}
+
+button:active {
+  cursor: pointer;
+  background: #68b6ff;
+  transform: translateY(4px);
 }
 
 .bottom-message {
@@ -159,19 +182,19 @@ button:hover {
   margin-left: var(--standard-left-margin);
 }
 
-.bottom-msg-1, .bottom-msg-2 {
+.bottom-msg-1 {
   margin: 0;
   margin-top: 10px;
 }
 
-.bottom-msg-2:hover {
-  cursor: pointer;
+.bottom-msg-2 {
+  margin: 0;
+  margin-top: 6px;
+  margin-left: 2px;
+  color: #2998ff;
+  font-size: 20px;
 }
 
-.guitar-img {
-  position: absolute;
-  max-width: 20%;
-  bottom: 225px;
-  right: 0;
-  padding: 40px;
+.bottom-msg-2:hover {
+  cursor: pointer;
 }
