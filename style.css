@@ -1,7 +1,11 @@
-* {
-  border: dotted 1px red;
-  margin: 0 auto;
+:root {
+  --standard-left-margin: 40px;
+  --standard-padding: 0px;
+}
 
+* {
+
+  margin: 0 auto;
 }
 
 body {
@@ -14,33 +18,120 @@ body {
 
 .left-column {
   float: left;
-  width: 35%;
+  width: 30%;
   min-height: 100vh;
 }
 
-.dsotm-img {
+.back-image {
+  margin: 0 auto;
+}
+
+.wywh-img {
   max-height: 100%;
   max-width: 100%;
 }
 
 .right-column {
   float: right;
-  width: 65%;
+  width: 70%;
   min-height: 100vh;
+}
+
+.top-section {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-left: var(--standard-padding);
+}
+
+.welcome-text {
+  font-size: 20px;
+  margin-left: var(--standard-left-margin);
+}
+
+.direct-text {
+  font-size: 20px;
+  margin-left: var(--standard-left-margin);
+  margin-top: 30px;
+}
+
+
+.middle-section {
+  padding: 20px;
+  background: lightsteelblue;
+  padding-left: var(--standard-padding);
+}
+
+.form-title {
+  font-size: 20px;
+  margin-left: var(--standard-left-margin);
+  margin-top: 5px;
+  margin-bottom: 20px;
+
+}
+
+h1 {
+  font-size: 20px;
 }
 
 .form-section {
   display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-.form-title {
-  width: 100%;
+.form-col-1 {
+  margin: 0;
+  margin-left: var(--standard-left-margin);
+}
+
+.form-col-2 {
+  margin: 0;
 }
 
 label, input {
   display: block;
 }
 
+input {
+  width: 200px;
+}
+
+.bottom-section {
+  padding: 20px;
+  padding-left: var(--standard-padding);
+}
+
+.bottom-button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  margin-left: var(--standard-left-margin);
+}
+
 .bottom-message {
   display: flex;
+  gap: 10px;
+  margin-left: var(--standard-left-margin);
+}
+
+.bottom-msg-1, .bottom-msg-2 {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background: lightsteelblue;
+  width: 100%;
+  height: 50px;
+}
+
+.footer-text {
+  font-size: 15px;
 }
